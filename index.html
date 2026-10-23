@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FORBIDDEN: The Forbidden Archive</title>
+<meta name="description" content="An endless archive of forbidden names, books, symbols and questions in Christian history. Entertainment and education.">
+<meta name="theme-color" content="#050505">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="./" aria-label="FORBIDDEN home">FORBIDDEN</a>
+  <p class="term" id="term" aria-hidden="true">ACCESSING ARCHIVE...</p>
+  <button class="icon" id="openSearch" aria-label="Search the archive">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>
+  </button>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>The Forbidden Archive</h1>
+    <p class="tag">Everything they warned you not to discover.</p>
+    <p class="sub">Names. Knowledge. Desires. Secrets. Mysteries.</p>
+    <div class="day" id="day"></div>
+    <div class="acts">
+      <button class="btn red" id="random">Random discovery</button>
+      <button class="btn" id="fresh">Newly generated</button>
+    </div>
+  </section>
+
+  <nav class="chips" id="chips" aria-label="Browse by category"></nav>
+  <h2 class="feedtitle" id="feedTitle">All profiles</h2>
+  <div class="feed" id="feed"></div>
+  <div id="sentinel" class="sentinel" aria-hidden="true"><span></span><span></span><span></span></div>
+</main>
+
+<footer class="foot">
+  Created for entertainment and education. Classifications are design labels, not rulings by any church or government. Christian traditions differ on most subjects here. Saved profiles stay in this browser and disappear if its data is cleared.
+</footer>
+
+<section id="detail" class="detail" hidden aria-label="Profile"></section>
+
+<div id="search" class="search" hidden>
+  <div class="spanel" role="dialog" aria-label="Search">
+    <div class="srow">
+      <input id="q" type="search" inputmode="search" autocomplete="off" placeholder="Name, keyword, category or any numerical ID" aria-label="Search">
+      <button class="btn" id="go">Search</button>
+      <button class="btn" id="clr">Clear</button>
+      <button class="btn" id="closeSearch" aria-label="Close search">Close</button>
+    </div>
+    <p class="hint">Any positive whole number opens its profile directly, however many digits. Text searches check the first 3,000 identities.</p>
+    <ul id="results" class="results"></ul>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
